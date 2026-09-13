@@ -1,24 +1,14 @@
-# EZA AI Business Bot
+# EZA AI Business Bot PRO
+Shortcut-button Telegram AI Business Assistant (Amharic + English).
 
-Telegram AI assistant for business groups.
+Render Web Service:
+Build: `pip install -r requirements.txt`
+Start: `python main_web.py`
 
-## Features
-- AI answers through OpenAI or Gemini
-- `/ask` command
-- Works in Telegram groups when mentioned or when replying to the bot
-- Amharic/English-friendly system prompt
-- Designed for Render deployment
+Environment Variables:
+- BOT_TOKEN
+- OPENAI_API_KEY
+- OPENAI_MODEL=gpt-5.6-luna
+- WEBHOOK_URL=https://YOUR-SERVICE.onrender.com
 
-## Render Environment Variables
-Required:
-- `BOT_TOKEN`
-
-Choose at least one AI provider:
-- `OPENAI_API_KEY`
-- `GEMINI_API_KEY`
-
-Optional:
-- `OPENAI_MODEL` (default: `gpt-4o-mini`)
-- `GEMINI_MODEL` (default: `gemini-1.5-flash`)
-
-Never put API keys in GitHub files.
+Never commit API keys to GitHub.
